@@ -9,128 +9,110 @@ body {
   font-family: "Helvetica Neue", Arial, sans-serif;
   background-color: #ffffff;
   color: #333;
-  line-height: 1.6;
+  line-height: 1.8;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* Header Styles */
 header {
-  background-color: #0a214c; /* Navy */
-  color: #ffffff;
-  padding: 20px;
-  text-align: center;
+  background-color: #003366; /* Navy Blue */
+  color: white;
+  padding: 20px 0;
+}
+
+header .container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header h1 {
-  font-size: 2rem;
-  margin-bottom: 5px;
+  font-size: 2.5rem;
 }
 
 header nav ul {
   list-style: none;
-  padding: 10px 0;
+  padding: 0;
 }
 
 header nav ul li {
   display: inline;
-  margin-right: 15px;
+  margin-left: 20px;
 }
 
 header nav ul li a {
-  color: #ffd700; /* Gold */
-  font-weight: bold;
+  color: white;
   text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 header nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Main Content Styles */
-main {
-  max-width: 800px;
-  margin: 30px auto;
-  padding: 20px;
-  background-color: #ffffff;
+/* Hero Section */
+.hero {
+  background-color: #f4f4f4; /* Light Grey */
+  text-align: center;
+  padding: 50px 20px;
+  margin: 30px 0;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.intro, .recent-posts {
-  margin-bottom: 30px;
-}
-
-.intro h2 {
-  font-size: 1.5rem;
-  color: #0a214c; /* Navy */
-  margin-bottom: 10px;
-}
-
-.intro p {
-  font-size: 1rem;
-  color: #555;
-}
-
-.recent-posts h2 {
-  font-size: 1.5rem;
-  color: #0a214c; /* Navy */
+.hero h2 {
+  font-size: 2.5rem;
+  color: #003366; /* Navy Blue */
   margin-bottom: 15px;
 }
 
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Recent Posts */
+.recent-posts {
+  padding: 40px 20px;
+}
+
+.recent-posts h2 {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
 .recent-posts ul {
-  list-style: disc;
-  padding-left: 20px;
+  list-style: none;
 }
 
 .recent-posts ul li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .recent-posts ul li a {
-  color: #ffd700; /* Gold */
   text-decoration: none;
+  color: #003366;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .recent-posts ul li a:hover {
   text-decoration: underline;
 }
 
-/* Footer Styles */
+/* Footer */
 footer {
-  background-color: #0a214c; /* Navy */
-  color: #ffffff;
+  background-color: #003366;
+  color: white;
   text-align: center;
-  padding: 15px;
-  font-size: 0.9rem;
-  position: relative;
-  width: 100%;
-  margin-top: 30px;
+  padding: 20px 0;
+  margin-top: 50px;
 }
 
 footer p {
-  margin: 0;
-}
-
-/* Links */
-a {
-  color: #ffd700; /* Gold */
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Button Styles */
-button, .btn {
-  background-color: #ffd700; /* Gold */
-  color: #0a214c; /* Navy */
-  border: none;
-  padding: 10px 20px;
   font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover, .btn:hover {
-  background-color: #d4af37; /* Darker Gold */
+  margin: 0;
 }
