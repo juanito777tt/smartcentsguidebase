@@ -74,5 +74,95 @@ a:hover {
   color: #fff;
   font-size: 1rem;
 }
+/* Your existing styles (keep these as-is) */
 
-/* Add other custom styles based on your content layout */
+/* Add the background image and brightness adjustment to the body */
+body {
+  background-image: url('images/dubai2.jpeg'); /* Path to your image */
+  background-size: cover; /* Make sure the image covers the entire screen */
+  background-position: center center; /* Center the image */
+  background-attachment: fixed; /* Keep the background fixed when scrolling */
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+  font-family: Arial, sans-serif; /* Optional, adjust to your existing font */
+  color: #fff; /* White text color for contrast */
+  position: relative; /* For positioning the overlay */
+}
+
+/* Apply the brightness filter using a dark overlay to reduce the image brightness */
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay to reduce brightness */
+  z-index: -1; /* Keep the overlay behind the content */
+  filter: brightness(0.5); /* Lower the brightness of the image */
+}
+
+/* Your existing content styles (keep these as-is) */
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  z-index: 1; /* Ensure it appears above the background */
+}
+
+p {
+  font-size: 1.2rem;
+  z-index: 1;
+  max-width: 600px;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+/* Your existing styles (keep these as-is) */
+
+/* Add the background image and brightness adjustment to the body */
+body {
+  background-image: url('images/dubai2.jpeg'); /* Path to your image */
+  background-size: cover; /* Make sure the image covers the entire screen */
+  background-position: center center; /* Center the image */
+  background-attachment: fixed; /* Keep the background fixed when scrolling */
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+  font-family: Arial, sans-serif; /* Optional, adjust to your existing font */
+  color: #fff; /* White text color for contrast */
+  position: relative; /* For positioning the overlay */
+}
+
+/* Apply the brightness filter using a dark overlay to reduce the image brightness */
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay to reduce brightness */
+  z-index: -1; /* Keep the overlay behind the content */
+  filter: brightness(0.5); /* Lower the brightness of the image */
+}
+
+/* Your existing content styles (keep these as-is) */
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  z-index: 1; /* Ensure it appears above the background */
+}
+
+p {
+  font-size: 1.2rem;
+  z-index: 1;
+  max-width: 600px;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+/* Additional sections, buttons, or layout-specific styles should remain unchanged */
+
+/* Optional: Add more content styling based on your current page design */
+
